@@ -50,13 +50,13 @@ There are lots of numerical values that are highly correlated. This data was so 
 
 ### Performance Comparison
 Random Forest
-![](Random-forest)
+![](Random-forest.png)
 
 Decision Tree
-![](Decision-tree)
+![](Decision-tree.png)
 
 LDA
-![](LDA)
+![](LDA.png)
 
 
 ### Conclusions
