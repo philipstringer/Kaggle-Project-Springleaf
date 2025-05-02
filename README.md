@@ -6,7 +6,7 @@
 
 ## Overview
 
-* Objective: The goal of this project is to predict whether a potential customer will respond to a direct mail offer. Springleaf aims to support individuals by offering accessible personal and auto loans designed to help them take control of their financial lives. By analyzing anonymized customer data, the objective is to develop a machine learning model capable of identifying likely responders to such offers.
+* Objective: The goal of this project is to predict whether a potential customer will respond to a direct mail offer. By analyzing anonymized customer data, the objective is to develop a machine learning model capable of identifying likely responders to such offers.
 * Dataset Sampling and Preprocessing: Due to the large size of the original dataset, a random sample of 1,000 records was selected for analysis. To minimize class imbalance, the sample was stratified by selecting 500 instances with a target value of 1 (responders) and 500 with a target value of 0 (non-responders). While this method may not be the most sophisticated approach to class balancing, it provided improved results compared to purely random sampling. After sampling, extensive data cleaning was conducted to remove irrelevant or low-variance features and prepare the data for training.
 * Model Training and Evaluation: A Random Forest Classifier was used for model training. Model performance was evaluated using accuracy, ROC-AUC score, and corresponding classification metrics. The best model achieved an accuracy of 71% and a ROC-AUC score of 0.76. While these results are promising, there is still room for further optimization and improvement.
 
