@@ -6,9 +6,9 @@
 
 ## Overview
 
-* The task is to to be able to predict whether or not a potential customer will respond to direct mail offer. Springleaf claims to provide a service to by providing them with reasonable personal and auto loans to help "take control of their lives". By scowering through anonymized data we plan to create a machine learning algorithm to make predictions to find potential clients. 
+* The task is to to be able to predict whether or not a potential customer will respond to direct mail offer. Springleaf claims to provide a service to individuals by providing them with reasonable personal and auto loans to help "take control of their lives". By scowering through anonymized data we plan to create a machine learning algorithm to make predictions to find potential clients. 
   
-* The dataset for this project is extremely large so I took a sample of 1000 random correspondents. In order to keep bias at a minimum I decided to take 500 random samples of target value equaling 1 and another random 500 samples of target value equaling 0. This helped a lot when training, even though this may not be best technique it still showed better results than picking 1000 random samples. After balancing this data must be cleaned before doing anything. Once cleaned and unwanted variables are out of the way, training begins. The performance is measured using accuracy, roc-auc, and printed percentages. 
+* The dataset for this project is extremely large so I took a sample of 1000 random correspondents. In order to keep bias at a minimum I decided to take 500 random samples of target value equaling 1 and another random 500 samples of target value equaling 0. This helped a lot when training, even though this may not be best technique for balancing it still showed better results than picking 1000 random samples. After balancing, this data must be cleaned before doing anything. Once cleaned and unwanted variables are out of the way, training begins. The performance is measured using accuracy, roc-auc, and printed percentages. 
 
 *  Highest accuracy I could acheive was 71% with a roc-auc of 0.76. It could be better...
 
