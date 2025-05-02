@@ -65,8 +65,7 @@ Decision tree worked the best compared to the others I used.
 
 ### Future Work
 
-I would like to practice more on a smaller data set, I didn't realize what I was getting into. I spent a majority of the time trying to clean the data set. As I continue my Data science education I would like to come back to this data set. This data set was a challenge and tought alot and there is still many improvement I can make in order to get the desired results. 
-
+In future projects, I would prefer to begin with a smaller dataset to focus more effectively on analysis and modeling. I underestimated the time and effort required for data cleaning, which took up the majority of this project. Despite the challenges, working with this dataset was a valuable learning experience that taught me a great deal about data preparation and analysis. As I progress in my data science education, I intend to revisit this dataset to apply new skills and make further improvements to achieve more accurate and insightful results.
 ## How to reproduce results
 
 * In order to obtain this data you have join the competition. Link: https://www.kaggle.com/competitions/springleaf-marketing-response
