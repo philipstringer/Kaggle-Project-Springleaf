@@ -39,7 +39,7 @@ This heatmap visualizes the pairwise Pearson correlation coefficients among the 
 * Many features are lightly colored, indicating weak or negligible correlation—typical in high-dimensional datasets with a mix of signal and noise.
 ![](correlation-heat-map-of-numericals.png)
 
-Top 20 important Variables I would show all but there are too many:
+Top 20 important Variables. I would show all but there are too many:
 ![](top20numericvars.png)
 
 ### Problem Formulation
