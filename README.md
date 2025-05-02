@@ -45,7 +45,7 @@ First 20 listed important Variables. I would show all but there are too many:
 ### Problem Formulation
 
 * Define:
-  * Input: The data that was intputed was everything remaining after the cleaning. Without references are for the columns it was difficult picking specific inputs
+  * Input: The data that was intputed was everything remaining after the cleaning portion. Without references for the columns, it was very difficult picking specific inputs
     Output: Binary Classification (1 yes & 0 no)
   * Models: Models used are decision tree, random forest classifier, and Linear discriminant analysis.
   * Loss, Optimizer, other Hyperparameters:
