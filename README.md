@@ -16,14 +16,20 @@
 ### Data
 
 * Data:
-  * Type: CSV file that has been anonymized to protect customer info.
-    * Input: Tons of data including state, zipcode, timestamps, etc. The columns are all named VAR_0001, VAR_0002, etc. making it really hard to know what type of data it is.
-  * Size: The total size is (145231, 1934) what my computer could handle was (1000, 1934) which is still a bit large.
-  * split: The full data set is unbalanced where no is the majority and yes is minority. I used an 80/20 split when training
+  Data
+  *	Format: The dataset is provided as a CSV file, with all information anonymized to protect customer privacy. All column names follow a generic format (e.g., VAR_0001, VAR_0002), making it difficult to interpret the nature of the variables (e.g., demographic, transactional, etc.).
+  * Features: The dataset includes a wide range of features such as location data (state, zip code), timestamps, and numerous anonymous variables.
+  * Size: The full dataset consists of 145,231 rows and 1,934 columns. Due to hardware limitations, a subset of 1,000 samples was used for analysis—still a high-dimensional dataset requiring extensive preprocessing.
+  * Class Imbalance: The original dataset is highly imbalanced, with non-responders significantly outnumbering responders. An 80/20 train-test split was used for model development, following the balancing strategy described earlier.
+#### Preprocessing and Cleaning
 
-#### Preprocessing / Clean up
-
-* This data was very "messy", for the sample I took there were a total of 17954 total 'NaN' not count '-1','','-999999'. Another issue with replacing the alternative versions for null is some variables had -1 as a item meant to be in the data set as something other than 'NaN'. Removing duplicates was the first step, second, split the data into x (numerical and categorical) and y (target) while dropping 'ID' variable along the way. Next I changed all numeric value to float, then split categorical and numerical data into different data frames. Now that the data types are split I clip the upper and lower bound of the numeric columns to rid the data of outliers. There were columns that only contain 'NaN' those need to be dropped in order to avoid issues. Now that this is done impute, scaler, and one hot enconde all data and concatenate the results into a new data frame ready for training. 
+The dataset required substantial preprocessing due to its size and messiness:
+  * Missing Values: In the 1,000-sample subset, there were 17,954 missing values explicitly labeled as NaN, not counting other placeholders such as -1, empty strings (''), or -999999. A major challenge was that some variables used -1 as a valid value rather than a placeholder for missing data.
+  * Initial Steps: The first step was removing duplicate rows. Next, the data was separated into features (X) and the target (y), with the ‘ID’ column dropped as it carried no predictive value.
+  * Data Type Handling: All numeric variables were converted to float for consistency. The data was then split into separate dataframes for numerical and categorical variables.
+  * Outlier Treatment: Outliers in numeric columns were mitigated by clipping values at the upper and lower bounds.
+  * Column Pruning: Columns consisting entirely of missing values were dropped to prevent issues during modeling.
+  * Final Preparation: Missing values were imputed, numerical data was scaled, and categorical data was one-hot encoded. The processed numerical and categorical features were then concatenated into a final dataframe, ready for training.
 
 #### Data Visualization
 There are lots of numerical values that are highly correlated. This data was so large and hard to interpret due to the columns being named VAR_0001, etc.
