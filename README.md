@@ -32,7 +32,11 @@ The dataset required substantial preprocessing due to its size and messiness:
   * Final Preparation: Missing values were imputed, numerical data was scaled, and categorical data was one-hot encoded. The processed numerical and categorical features were then concatenated into a final dataframe, ready for training.
 
 #### Data Visualization
-There are lots of numerical values that are highly correlated. This data was so large and hard to interpret due to the columns being named VAR_0001, etc.
+This heatmap visualizes the pairwise Pearson correlation coefficients among the numerical features in the dataset:
+* Observations:
+* There are several dense red blocks along the diagonal, suggesting clusters of features that are highly correlated with one another. These may represent redundant or highly interdependent variables.
+* Pockets of negative correlation (blue regions) are less common but still present, indicating some features move inversely with others.
+* Many features are lightly colored, indicating weak or negligible correlation—typical in high-dimensional datasets with a mix of signal and noise.
 ![](correlation-heat-map-of-numericals.png)
 
 ### Problem Formulation
