@@ -43,10 +43,11 @@ There are lots of numerical values that are highly correlated. This data was so 
 ### Training
 
 * Describe the training:
-  * How: The model is trained using Random Forest Classifier with 100 Trees.
-  * Trainin time: Training was very quick only took few minutes.
-  * Stopping Criteria: The model trains until fitted.
-  * Difficulties: Cleaning the data properly for better results.
+Training
+  * Approach: The model was trained using a Random Forest Classifier consisting of 100 decision trees.
+  *	Training Time: Training was efficient and completed within a few minutes.
+  * Stopping Criteria: The model was trained until convergence, using the default fitting process provided by the algorithm.
+  * Challenges: The primary challenge was ensuring proper data cleaning and preprocessing, which was essential for improving model performance and achieving reliable results.
 
 ### Performance Comparison
 Random Forest
