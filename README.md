@@ -78,9 +78,11 @@ In future projects, I would prefer to begin with a smaller dataset to focus more
 ## How to reproduce results
 
 * In order to obtain this data you have join the competition. Link: https://www.kaggle.com/competitions/springleaf-marketing-response
-   * To reproduce my results simply download spring leaf data cleaning file, and down load the data set. Once you have the data set, if your computer can not handle it you will have to sample it out using google colab or your desired choice. 
-   * This data code can also be used for other set as well, there may be some tweaks that need to be made but nothing major.
-* I would suggest using Jupyter only because colab will delete your files when you leave. If you have a very weak computer or no memory I would suggest using colab.
+   * Reproducing Results: To replicate the results, download both the Springleaf dataset and the associated data cleaning script. If your system cannot handle the full dataset due to memory constraints, consider sampling a smaller subset using Google Colab or another cloud-based environment of your choice.
+   * Code Reusability: The data cleaning script is adaptable and can be reused for similar datasets. While minor adjustments may be needed depending on dataset structure, the core preprocessing logic remains applicable.
+* Development Environment Recommendations:
+  * Jupyter Notebook is recommended for ease of development, persistence of files, and flexibility in managing large datasets locally.
+  * Google Colab is a suitable alternative for users with limited hardware resources. However, keep in mind that session data and uploaded files may be lost upon disconnection or inactivity.
 
 ### Overview of files in repository
 
